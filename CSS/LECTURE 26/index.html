@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALIEN RECIPIES</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav a{
+            position: relative;
+            display: inline-block;
+            z-index: 1;
+        }
+        nav span{
+            position: absolute;
+            top: 0;
+            left: 56%;
+            width: 110px;
+            height: 100%;
+            background: linear-gradient(45deg,rgba(54, 135, 146, 0.425),rgba(129, 151, 155, 0.548));
+            /* border-radius: 10px; */
+            transition: .5s;
+        }
+        nav a:nth-child(1):hover~span{
+            left:56%;
+        }
+        nav a:nth-child(2):hover~span{
+            left: 65.5%;
+            width: 140px;
+        }
+        nav a:nth-child(3):hover~span{
+            left: 77%;
+            width: 115px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+           <!-- navigation bar ////////////////////////////// -->
+        <header>
+            <div class="navcontainer">
+                <nav>
+                    <ul id="navlist">
+                        <li>
+                            <p id="logo">ALIEN RECIPIES</p>
+                        </li>
+                        <li>
+                            <div class="navitems">
+                                <a href="#">Home</a>
+                                <a href="#">Contact</a>
+                                <a href="about.html">About</a>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="contentbox">
+                <!-- first item -->
+                 <section class="sections">
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                             <h2>Biryani</h2>
+                             <div>
+                                <h2>Ingrediants</h2>
+                                <ul class="ingrediants">
+                                    <li>Rice</li>
+                                    <li>Some type of meat</li>
+                                    <li>Spices</li>
+                                </ul>
+                             </div>
+                             <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipes">
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero?</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dicta sed reprehenderit sapiente corrupti doloribus?</li>
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellat eum iste. Natus ab totam necessitatibus suscipit aspernatur laboriosam molestias.</li>
+                                </ol>
+                             </div>
+                        </div>
+
+                        <div class="rightbox">
+                            <img src="biryani.jpg" alt="Biryani">
+                            <div class="overlay">
+                                <span>Click here to Buy</span>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+
+                 <section class="sections">
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                             <h2>Karahi</h2>
+                             <div>
+                                <h2>Ingrediants</h2>
+                                <ul class="ingrediants">
+                                    <li>Oil</li>
+                                    <li>Some type of meat</li>
+                                    <li>Spices</li>
+                                </ul>
+                             </div>
+                             <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipes">
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero?</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dicta sed reprehenderit sapiente corrupti doloribus?</li>
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellat eum iste. Natus ab totam necessitatibus suscipit aspernatur laboriosam molestias.</li>
+                                </ol>
+                             </div>
+                        </div>
+
+                        <div class="rightbox">
+                            <img src="Karahi.jpg" alt="Biryani" height="500px" width="500px">
+                            <div class="overlay">
+                                <span>Click here to Buy</span>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+
+                 <section class="sections">
+                    <div class="items">
+                        <div class="leftbox">
+                            <!-- heading -->
+                             <h2>Karahi</h2>
+                             <div>
+                                <h2>Ingrediants</h2>
+                                <ul class="ingrediants">
+                                    <li>Oil</li>
+                                    <li>Some type of meat</li>
+                                    <li>Spices</li>
+                                </ul>
+                             </div>
+                             <div>
+                                <h2>Recipe</h2>
+                                <ol class="recipes">
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero?</li>
+                                    <li>Lorem ipsum dolor sit amet.</li>
+                                    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae dicta sed reprehenderit sapiente corrupti doloribus?</li>
+                                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati repellat eum iste. Natus ab totam necessitatibus suscipit aspernatur laboriosam molestias.</li>
+                                </ol>
+                             </div>
+                        </div>
+
+                        <div class="rightbox">
+                            <img src="Karahi.jpg" alt="Biryani" height="500px" width="500px">
+                            <div class="overlay">
+                                <span>Click here to Buy</span>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footerbox">
+                <p>Copyright © Alien Recipies Pvt ltd 2024 All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+        
+    </div>
+</body>
+</html>

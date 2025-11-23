@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card 3</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: #8BC6EC;
+            background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            width: 600px;
+            height: 300px;
+            background-color: white;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover::before{
+            left: 0%;
+        }
+        .card::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: left 5s ease;
+        }
+
+        .leftbox{
+            background-color: purple;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px;
+        }
+        .box{
+            display: flex;
+            justify-content: space-between;
+        }
+        .leftbox h2{
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem;
+            padding-top: 10px;
+        }
+        #text p{
+            color: white;
+            font-size: 0.9rem;
+        }
+        .box h2{
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        .box p{
+            color: white;
+            font-size: 0.8rem;
+        }
+        .rightbox{
+            width: 50%;            
+        }
+        .rightbox img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="leftbox">
+                <div id="heading">
+                    <h2>Get Insights that Help Your Business Grow</h2>
+                </div>
+                <div id="text">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde voluptatum neque et facilis eveniet aliquam quasi facere ipsam. Ad.</p>
+                </div>
+                <div class="box">
+                    <div><h2>10k+</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div><h2>214</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div><h2>12M+</h2>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="rightbox">
+                <img src="images/icon.jpg">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

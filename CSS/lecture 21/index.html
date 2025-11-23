@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 2px solid black;
+            display: flex;
+            flex-direction:row;
+            flex-wrap: wrap;
+            width: 500px;
+            justify-content: space-between;
+        }
+        .box1{
+            background-color: aqua;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;  
+            width: 42%;
+        }
+        .box2{
+            background-color: blue;
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            width: 42%;          
+        }
+        @media (max-width:500px){
+            .container{
+                flex-direction: column;
+                width: 255px;
+            }
+            .box1{
+                width: 90%;
+            }
+            .box2{
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="box1">
+            <p>input</p>
+            <input type="text">
+
+            <p>email</p>
+            <input type="email">
+        </div>
+
+        <div class="box2">
+            <p>name</p>
+            <input type="text">
+
+            <p>password</p>
+            <input type="password">
+        </div>
+
+    </div>
+</body>
+</html>

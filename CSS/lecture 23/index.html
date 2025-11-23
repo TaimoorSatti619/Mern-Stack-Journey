@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: bisque;
+            border: 2px solid black;
+            width: 100xpx;
+            height: 500px;
+            margin: 5px;
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: blue;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            animation-name: forward;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+        }
+        @keyframes forward {
+            from{
+                top: 0;
+                left: 0;
+            }     
+            to{
+                top: 0;
+                left: 92%;
+            }       
+        }
+        .box2{
+            border: 2px solid black;
+            border-radius: 8px;
+            background-color: blue;
+            width: 100px;
+            margin: 5px;
+            position: relative;
+            animation-name: downword;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes downword {
+            from{
+                top: 400px;
+                left:92%;
+            }     
+            to{
+                top: 400px;
+                left: 0;
+            }       
+        }
+        .circle{
+            border: 2px solid black;
+            border-radius: 80px;
+            background-color: rgb(255, 72, 0);
+            width: 30px;
+            margin: 5px;
+            position: relative;
+            top: 3dvb;
+            left: 30%;
+            animation-name: gool;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+        }
+        @keyframes gool {
+            0%{
+                top: 1%;
+                left:5%;
+            }     
+            30%{
+                top: 5%;
+                left: 90%;
+            } 
+            60%{
+                top: 90%;
+                left: 10%;
+            }  
+            100%{
+                top: 95%;
+                left: 90%;
+            }    
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box">
+            <h2>ALIEN</h2>
+        </div>
+        <div class="circle">
+            <h2>O</h2>
+        </div>
+        <div class="box2">
+            <h2>Alien 2.0</h2>
+        </div>
+    </div>
+    
+</body>
+</html>

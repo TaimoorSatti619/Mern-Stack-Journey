@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 3D TRANSFORMS</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            padding: 1rem;
+        }
+        .container{
+            background-color: beige;
+            padding: 1rem;
+            gap: 1rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+        .item{
+            height: 120px;
+            width: 120px;
+            background-color: greenyellow;
+            border: 2px solid black;
+            text-align: center;
+        }
+        #rotatex:hover{
+            transform: rotateX(45deg);
+        }
+        #rotatey:hover{
+            transform: rotateY(45deg);
+        }
+        #rotatez:hover{
+            transform: rotateZ(45deg);
+        }
+
+        #tranlatex:hover{
+            transform: translateX(100px);
+        }
+        #tranlatey:hover{
+            transform: translateY(100px);
+        }
+        #tranlatez:hover{
+            transform: perspective(200px) translateZ(100px);
+        }
+
+        #scalex:hover{
+            transform: scaleX(1.5);
+        }
+        #scaley:hover{
+            transform: scaleY(1.5);
+        }
+        #scalez:hover{
+            transform: perspective(300px) scaleZ(5) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="rotatex">rotatex</div>
+        <div class="item" id="rotatey">rotatey</div>
+        <div class="item" id="rotatez">rotatez</div>
+        <div class="item" id="tranlatex">tranlatex</div>
+        <div class="item" id="tranlatey">tranlatey</div>
+        <div class="item" id="tranlatez">tranlatez</div>
+        <div class="item" id="scalex">scalex</div>
+        <div class="item" id="scaley">scaley</div>
+        <div class="item" id="scalez">scalez</div>
+    </div>
+</body>
+</html>
