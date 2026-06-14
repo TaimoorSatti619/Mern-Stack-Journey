@@ -1,0 +1,35 @@
+.card{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card input{
+    padding: 0.5rem;
+    width: 100%;
+    border: 2px solid rgb(59, 8, 227);
+    border-radius: 0.5rem;
+    color: rgb(17, 154, 17);
+    font-size: large;
+}
+
+h3{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+p{
+    color: gray;
+    font-size: large;
+    font-weight: bold;
+}
+
+.line{
+    width: 90%;
+    height: 3px;
+    background-color: rgb(59, 8, 227);
+    margin: 1rem 0;
+}

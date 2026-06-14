@@ -1,0 +1,48 @@
+.counter-container{
+    background-color: rgb(241, 241, 232);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 2.5rem;
+    border:none;
+    border-radius: 2.5rem;
+
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.counter-container button{
+    margin-top: 1rem;
+    width: 100%;
+    padding: 1rem;
+    font-size: x-large;
+    cursor: pointer;
+    color: white;
+}
+
+#para{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(108, 108, 108);
+}
+
+#click_btn{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: green;
+    border: none;
+    border-radius: 2rem;
+}
+
+#reset_btn{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: red;
+    border: none;
+    border-radius: 2rem;
+}
